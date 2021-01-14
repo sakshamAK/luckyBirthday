@@ -34,11 +34,7 @@ export default function App() {
       <div className="outer-box">
         <div className="content-box">
           <h1>Is your birthday lucky?</h1>
-          <strong
-            style={{
-              fontSize: "16px"
-            }}
-          >
+          <strong className="disclaimer">
             (Don't worry its just an fun app.)
           </strong>
 
@@ -88,7 +84,7 @@ export default function App() {
         <button
           style={{
             padding: "10px 40px",
-            margin: "0 30px",
+            margin: "10px 30px 0 30px",
             fontSize: "17px",
             borderRadius: "10px",
             border: "none",

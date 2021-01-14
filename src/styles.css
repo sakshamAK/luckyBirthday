@@ -11,7 +11,7 @@ body {
 .circle {
   height: 900px;
   width: 1600px;
-  margin: -660px 0 0 0;
+  margin: -700px 0 0 0;
   box-shadow: 0px 20px 150px #7c2d12;
   border-radius: 30%;
   background: #ea580c;
@@ -22,7 +22,7 @@ body {
   grid-template-columns: 50% 50%;
   height: 600px;
   width: 1200px;
-  margin: -150px 0 0 200px;
+  margin: -130px 0 0 200px;
   box-shadow: 0px 20px 150px #7c2d12;
   border-radius: 30px;
   background: #fff7ed;
@@ -106,10 +106,116 @@ a {
   color: black;
 }
 
+.disclaimer {
+  font-size: 16px;
+}
+
 .git,
 .twitter,
 .instagram,
 .linkedin {
   height: 20px;
   margin: 5px;
+}
+
+@media screen and (max-width: 1360px) {
+  .circle {
+    height: 880px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  .outer-box {
+    height: 600px;
+    width: 90%;
+    margin: 80px 0 0 5%;
+  }
+  img {
+    margin: 150px 100px 100px 0;
+    height: 330px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .circle {
+    height: 400px;
+    margin-top: -250px;
+    border-radius: 50%;
+  }
+  .outer-box {
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
+  img {
+    height: 330px;
+    margin: 80px 0 0 0;
+  }
+  aside {
+    margin: 80px 0 30px 0;
+    text-align: left;
+    padding: 0 0 0 60px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  h1 {
+    font-size: 34px;
+  }
+  .disclaimer {
+    font-size: 15px;
+  }
+
+  ol {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  h1 {
+    margin-top: 50px;
+  }
+  img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  ol {
+    width: 90%;
+    margin-left: -30px;
+  }
+  #lucky-number,
+  .date-picker {
+    padding: 6px 30px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+  }
+  #lucky-number {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  ol {
+    width: 90%;
+    margin-left: -10px;
+  }
+  img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  ol {
+    width: 80%;
+  }
+  img {
+    height: 200px;
+  }
 }
